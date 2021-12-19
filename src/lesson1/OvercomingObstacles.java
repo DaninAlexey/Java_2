@@ -24,17 +24,23 @@ public class OvercomingObstacles {
         Obstacle obstacles[] = {wall1, treadmill1, wall2, treadmill2, wall3, treadmill3, wall4, treadmill4};
 
         for (Participant participant : participants) {
-            for (Obstacle obstacle : obstacles) {
-                if (obstacle.youСanPass(participant))
-                    System.out.printf("Участник %s преодолел препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
-                else {
-                    System.out.printf("Участник %s не смог преодолеть препятствие %s %n" + System.lineSeparator(), participant.getName(), obstacle.getName());
-                    break;
+            {
+                for (Obstacle obstacle : obstacles) {
+                    if (obstacle.youСanPass(participant)) {
+                        if (obstacle instanceof Wall)
+                            System.out.printf("Участник %s смог перепрыгнуть препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
+                        if (obstacle instanceof Treadmill)
+                            System.out.printf("Участник %s смог пробежать препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
+                    } else {
+                        if (obstacle instanceof Wall)
+                            System.out.printf("Участник %s не смог перепрыгнуть препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
+                        if (obstacle instanceof Treadmill)
+                            System.out.printf("Участник %s не смог пробежать препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
+                        break;
+                    }
                 }
+                System.out.println();
             }
-
         }
-
-
     }
 }

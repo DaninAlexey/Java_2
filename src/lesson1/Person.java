@@ -5,7 +5,6 @@ public class Person implements Participant {
     private final int jumpHeightLimit;
     private final int runningDistanceLimit;
 
-
     public Person(String name, int jumpHeightLimit, int runningDistanceLimit) {
         this.name = name;
         this.jumpHeightLimit = jumpHeightLimit;

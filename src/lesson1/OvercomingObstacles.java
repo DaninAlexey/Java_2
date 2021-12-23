@@ -1,6 +1,6 @@
 package lesson1;
 
-public class OvercomingObstacles {
+public class  OvercomingObstacles {
 
     public static void main(String[] args) {
         Robot r2d1 = new Robot("r2d1", 30, 50);

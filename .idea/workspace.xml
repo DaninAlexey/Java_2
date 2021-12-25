@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="297e6673-1c3a-4b4e-9cc5-ba4baa2acf81" name="Changes" comment="ДЗ-3 курс JAVA-2">
-      <change afterPath="$PROJECT_DIR$/src/lesson3/Lesson3Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/TelephoneDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jAVA2/lesson1/Obstacle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jAVA2/lesson1/Obstacle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson1/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson1/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Obstacle.java" afterDir="false" />
@@ -168,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640249749956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ДЗ-3 курс JAVA-2">
+      <created>1640453607864</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640453607864</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

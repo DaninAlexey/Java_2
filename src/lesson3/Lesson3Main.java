@@ -1,7 +1,6 @@
 package lesson3;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Set;
 
 import static java.lang.System.lineSeparator;
@@ -34,8 +33,7 @@ public class Lesson3Main {
         telephoneDirectory.add("123-45-71", "Иванов");
         telephoneDirectory.add("123-45-72", "Петров");
 
-        Set<String> listOfSurname = new HashSet<>();
-        listOfSurname = telephoneDirectory.get("Петров");
+        Set<String> listOfSurname = telephoneDirectory.get("Петров");
         System.out.println(listOfSurname);
     }
 

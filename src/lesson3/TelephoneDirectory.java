@@ -3,7 +3,7 @@ package lesson3;
 import java.util.*;
 
 public class TelephoneDirectory {
-    private Map<String, String> phoneDirectory;
+    private final Map<String, String> phoneDirectory;
 
     public TelephoneDirectory() {
         phoneDirectory = new HashMap<>();

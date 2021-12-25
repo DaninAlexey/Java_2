@@ -3,11 +3,7 @@ package lesson3;
 import java.util.*;
 
 public class TelephoneDirectory {
-    private final Map<String, String> phoneDirectory;
-
-    public TelephoneDirectory() {
-        phoneDirectory = new HashMap<>();
-    }
+    private final Map<String, String> phoneDirectory = new HashMap<>();
 
     public void add(String phone, String name) {
         phoneDirectory.put(phone, name);
@@ -15,10 +11,10 @@ public class TelephoneDirectory {
 
     public Set<String> get(String name) {
         Set<String> needPhoneNumber = new HashSet<>();
-        for (Map.Entry<String, String> o : phoneDirectory.entrySet())
+        for (Map.Entry<String, String> entry : phoneDirectory.entrySet())
         {
-            if (name.equals(o.getValue())) {
-                needPhoneNumber.add(o.getKey());
+            if (name.equals(entry.getValue())) {
+                needPhoneNumber.add(entry.getKey());
             }
         }
         return (needPhoneNumber);
@@ -27,8 +23,7 @@ public class TelephoneDirectory {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof TelephoneDirectory)) return false;
-        TelephoneDirectory that = (TelephoneDirectory) o;
+        if (!(o instanceof TelephoneDirectory that)) return false;
         return Objects.equals(phoneDirectory, that.phoneDirectory);
     }
 

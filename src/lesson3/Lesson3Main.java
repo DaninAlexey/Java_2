@@ -24,6 +24,7 @@ public class Lesson3Main {
         searchUniqueWords(array);
         System.out.println("----------------------------");
         searchNumberAllWord(array);
+        System.out.println("----------------------------");
 
         TelephoneDirectory telephoneDirectory = new TelephoneDirectory();
         telephoneDirectory.add("123-45-67", "Иванов");
@@ -33,7 +34,7 @@ public class Lesson3Main {
         telephoneDirectory.add("123-45-71", "Иванов");
         telephoneDirectory.add("123-45-72", "Петров");
 
-        Set<String> listOfSurname = telephoneDirectory.get("Петров");
+        Set<String> listOfSurname = telephoneDirectory.get("Иванов");
         System.out.println(listOfSurname);
     }
 

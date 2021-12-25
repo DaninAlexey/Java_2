@@ -19,7 +19,6 @@ public class TelephoneDirectory {
         {
             if (name.equals(o.getValue())) {
                 needPhoneNumber.add(o.getKey());
-                System.out.println("-------------");
             }
         }
         return (needPhoneNumber);

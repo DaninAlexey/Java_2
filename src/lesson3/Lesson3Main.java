@@ -3,8 +3,6 @@ package lesson3;
 import java.util.ArrayList;
 import java.util.Set;
 
-import static java.lang.System.lineSeparator;
-
 public class Lesson3Main {
 
     public static void main(String[] args) {
@@ -42,7 +40,6 @@ public class Lesson3Main {
         for (int i = 0; i < array.size(); i++) {
             if (array.indexOf(array.get(i)) == array.lastIndexOf(array.get(i)))
                 System.out.println(array.get(i));
-            lineSeparator();
         }
     }
 

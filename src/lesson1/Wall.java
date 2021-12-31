@@ -9,13 +9,12 @@ public class Wall implements Obstacle {
         this.height = height;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
     @Override
-    public boolean youСanPass(Participant participant) {
-        return participant.jump() >= height;
+    public boolean passObstacle(Participant participant) {
+        return participant.jumpWall() >= height;
     }
 }

@@ -12,18 +12,17 @@ public class Cat implements Participant {
         this.runningDistanceLimit = runningDistanceLimit;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
     @Override
-    public int run() {
+    public int runDistance() {
         return runningDistanceLimit;
     }
 
     @Override
-    public int jump() {
+    public int jumpWall() {
         return jumpHeightLimit;
     }
 }

@@ -1,6 +1,6 @@
 package lesson1;
 
-public class  OvercomingObstacles {
+public class OvercomingObstacles {
 
     public static void main(String[] args) {
         Robot r2d1 = new Robot("r2d1", 30, 50);
@@ -20,27 +20,65 @@ public class  OvercomingObstacles {
         Treadmill treadmill3 = new Treadmill("большая дорожка ", 90);
         Treadmill treadmill4 = new Treadmill("огромная дорожка", 150);
 
-        Participant participants[] = {r2d1, r2d2, r2d3, matroskin, obiWan, luke};
-        Obstacle obstacles[] = {wall1, treadmill1, wall2, treadmill2, wall3, treadmill3, wall4, treadmill4};
+        Participant[] participants = {r2d1, r2d2, r2d3, matroskin, obiWan, luke};
+        Obstacle[] obstacles = {wall1, treadmill1, wall2, treadmill2, wall3, treadmill3, wall4, treadmill4};
 
         for (Participant participant : participants) {
-            {
-                for (Obstacle obstacle : obstacles) {
-                    if (obstacle.youСanPass(participant)) {
-                        if (obstacle instanceof Wall)
-                            System.out.printf("Участник %s смог перепрыгнуть препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
-                        if (obstacle instanceof Treadmill)
-                            System.out.printf("Участник %s смог пробежать препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
+
+            if (participant instanceof Robot) {
+                boolean fl = true;
+                for (int i = 0; i < obstacles.length && fl; i++) {
+                    if (obstacles[i].passObstacle(participant)) {
+                        if (obstacles[i] instanceof Wall)
+                            System.out.printf("Участник %s смог перепрыгнуть препятствие %s%n", ((Robot) participant).getName(), ((Wall) obstacles[i]).getName());
+                        if (obstacles[i] instanceof Treadmill)
+                            System.out.printf("Участник %s смог пробежать препятствие %s%n", ((Robot) participant).getName(), ((Treadmill) obstacles[i]).getName());
                     } else {
-                        if (obstacle instanceof Wall)
-                            System.out.printf("Участник %s не смог перепрыгнуть препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
-                        if (obstacle instanceof Treadmill)
-                            System.out.printf("Участник %s не смог пробежать препятствие %s" + System.lineSeparator(), participant.getName(), obstacle.getName());
-                        break;
+                        if (obstacles[i] instanceof Wall)
+                            System.out.printf("Участник %s не смог перепрыгнуть препятствие %s%n", ((Robot) participant).getName(), ((Wall) obstacles[i]).getName());
+                        if (obstacles[i] instanceof Treadmill)
+                            System.out.printf("Участник %s не смог пробежать препятствие %s%n", ((Robot) participant).getName(), ((Treadmill) obstacles[i]).getName());
+                        fl = false;
                     }
                 }
-                System.out.println();
             }
+
+            if (participant instanceof Person) {
+                boolean fl = true;
+                for (int i = 0; i < obstacles.length && fl; i++) {
+                    if (obstacles[i].passObstacle(participant)) {
+                        if (obstacles[i] instanceof Wall)
+                            System.out.printf("Участник %s смог перепрыгнуть препятствие %s%n", ((Person) participant).getName(), ((Wall) obstacles[i]).getName());
+                        if (obstacles[i] instanceof Treadmill)
+                            System.out.printf("Участник %s смог пробежать препятствие %s%n", ((Person) participant).getName(), ((Treadmill) obstacles[i]).getName());
+                    } else {
+                        if (obstacles[i] instanceof Wall)
+                            System.out.printf("Участник %s не смог перепрыгнуть препятствие %s%n", ((Person) participant).getName(), ((Wall) obstacles[i]).getName());
+                        if (obstacles[i] instanceof Treadmill)
+                            System.out.printf("Участник %s не смог пробежать препятствие %s%n", ((Person) participant).getName(), ((Treadmill) obstacles[i]).getName());
+                        fl = false;
+                    }
+                }
+            }
+
+            if (participant instanceof Cat) {
+                boolean fl = true;
+                for (int i = 0; i < obstacles.length && fl; i++)  {
+                    if (obstacles[i].passObstacle(participant)) {
+                        if (obstacles[i] instanceof Wall)
+                            System.out.printf("Участник %s смог перепрыгнуть препятствие %s%n", ((Cat) participant).getName(), ((Wall) obstacles[i]).getName());
+                        if (obstacles[i] instanceof Treadmill)
+                            System.out.printf("Участник %s смог пробежать препятствие %s%n", ((Cat) participant).getName(), ((Treadmill) obstacles[i]).getName());
+                    } else {
+                        if (obstacles[i] instanceof Wall)
+                            System.out.printf("Участник %s не смог перепрыгнуть препятствие %s%n", ((Cat) participant).getName(), ((Wall) obstacles[i]).getName());
+                        if (obstacles[i] instanceof Treadmill)
+                            System.out.printf("Участник %s не смог пробежать препятствие %s%n", ((Cat) participant).getName(), ((Treadmill) obstacles[i]).getName());
+                        fl = false;
+                    }
+                }
+            }
+            System.out.println();
         }
     }
 }

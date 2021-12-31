@@ -9,13 +9,12 @@ public class Treadmill implements Obstacle {
         this.length = length;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
     @Override
-    public boolean youСanPass(Participant participant) {
-        return participant.run() >= length;
+    public boolean passObstacle(Participant participant) {
+        return participant.runDistance() >= length;
     }
 }

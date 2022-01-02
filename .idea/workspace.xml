@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="297e6673-1c3a-4b4e-9cc5-ba4baa2acf81" name="Changes" comment="2">
-      <change afterPath="$PROJECT_DIR$/src/lesson3/Lesson3Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/TelephoneDirectory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFXChat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFXChat/src/main/java/com/example/javafxchat/ChatApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFXChat/src/main/java/com/example/javafxchat/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFXChat/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFXChat/src/main/resources/com/example/javafxchat/chat-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Obstacle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/OvercomingObstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/OvercomingObstacles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Treadmill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Treadmill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson2/MyArraySizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson2/MyArraySizeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson2/TestEexepLesson2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson2/TestEexepLesson2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +101,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jAVA2.iml" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.Lesson3Main">
+  <component name="RunManager" selected="Application.ChatApplication">
+    <configuration name="ChatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javafxchat.ChatApplication" />
+      <module name="JavaFXChat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javafxchat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lesson3Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson3.Lesson3Main" />
       <module name="java2" />
@@ -165,9 +177,11 @@
       <item itemvalue="Application.OvercomingObstacles" />
       <item itemvalue="Application.TestEexepLesson2" />
       <item itemvalue="Application.Lesson3Main" />
+      <item itemvalue="Application.ChatApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChatApplication" />
         <item itemvalue="Application.Lesson3Main" />
       </list>
     </recent_temporary>

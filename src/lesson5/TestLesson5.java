@@ -6,15 +6,16 @@ public class TestLesson5 {
     static final int h = 5000000;
 
     public static void main(String[] args) throws InterruptedException {
-        calculationInOneTread();
-        calculationInTwoTread();
+        calculationInOneThread();
+        calculationInTwoThread();
     }
 
-    private static void calculationInOneTread() {
+    private static void calculationInOneThread() {
 
         float[] arr = new float[size];
         for (int i = 0; i < size; i++)
             arr[i] = 1;
+
 
         long a = System.currentTimeMillis();
         for (int i = 0; i < size; i++)
@@ -24,9 +25,10 @@ public class TestLesson5 {
         System.out.println(System.currentTimeMillis() - a + " миллисекунд - время выполнения первого метода");
     }
 
-    private static void calculationInTwoTread() throws InterruptedException {
+    private static void calculationInTwoThread() throws InterruptedException {
         float[] arr = new float[size];
         for (int i = 0; i < size; i++)
+
             arr[i] = 1;
 
         long a = System.currentTimeMillis();
